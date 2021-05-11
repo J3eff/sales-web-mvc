@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using SalesWebMvc.Models;
 using SalesWebMvc.Data;
 using SalesWebMvc.Services;
+using SalesWebMvc.Config;
 
 namespace SalesWebMvc
 {
@@ -35,17 +36,12 @@ namespace SalesWebMvc
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
+            services.ResolveDependencies();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<SalesWebMvcContext>(options =>
                     options.UseMySql(Configuration.GetConnectionString("SalesWebMvcContext"), builder =>
-                    builder.MigrationsAssembly("SalesWebMvc")));
-
-            services.AddScoped<SeedingService>();
-            services.AddScoped<SellerService>();
-            services.AddScoped<DepartmentService>();
-            services.AddScoped<SalesRecordService>();
+                    builder.MigrationsAssembly("SalesWebMvc")));            
 
         }
 
