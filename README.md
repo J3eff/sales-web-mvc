@@ -11,12 +11,12 @@
 ## <p id='projeto'>💻 Projeto </p>
 - <p>Sistema de vendedores </p>
 
-## <p id='funcionalidades'>⚙ Funcionalidades</p>
+  - ### <p id='funcionalidades'>⚙ Funcionalidades</p>
 
-- Cadastro de Vendedores, com as funções de atualização informações e Remoção de dados.
-- Cadastro de Departamentos e deleção de departamentos.
-- Busca de vendas simples com total de vendas de todos departamentos.
-- Busca de vendas agrupada com total de vendas por departamentos.
+    - Cadastro de Vendedores, com as funções de atualização informações e Remoção de dados.
+    - Cadastro de Departamentos e deleção de departamentos.
+    - Busca de vendas simples com total de vendas de todos departamentos.
+    - Busca de vendas agrupada com total de vendas por departamentos.
 
 ## <p id='tecnologies'>💻 Tecnologia </p>
 
